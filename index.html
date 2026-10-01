@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>María Angélica Moreno · Biotecnóloga</title>
+<meta name="description" content="Biotecnóloga que investiga, enseña, pinta y lee. Mi trabajo, mi librería, mis garabatos, TribuLat y mis historias.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="María Angélica Moreno">
+<meta property="og:description" content="Biotecnóloga que investiga, enseña, pinta y lee.">
+<meta property="og:image" content="https://mangelicamm.github.io/og.jpg">
+<meta property="og:url" content="https://mangelicamm.github.io/">
+<link rel="canonical" href="https://mangelicamm.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23FBF8F1' stroke='%23141112' stroke-width='3'/%3E%3Ccircle cx='24' cy='26' r='9' fill='%231F9D68' fill-opacity='.7'/%3E%3Ccircle cx='42' cy='22' r='6' fill='%236B3FD8' fill-opacity='.7'/%3E%3Ccircle cx='40' cy='41' r='8' fill='%23FF5A4E' fill-opacity='.7'/%3E%3Ccircle cx='23' cy='43' r='5' fill='%232D5BFF' fill-opacity='.7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500&family=Cormorant+Garamond:wght@700&family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div id="intro" aria-hidden="true"><canvas id="introC"></canvas><button type="button" id="introSkip">Saltar intro</button></div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio">Angélica<span>.</span></a>
+    <p class="tagline">Biotecnología · Laboratorio · Arte · Libros</p>
+    <div class="hright"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="es" aria-pressed="true">ES</button><button type="button" data-l="en" aria-pressed="false">EN</button></div><small>Navegar</small><button class="kbtn" id="kOpen" type="button" aria-label="Abrir menú rápido">⌘ + K</button></div>
+  </div>
+</header>
+
+<main class="wrap" id="inicio">
+  <div class="hero" style="overflow:hidden">
+    <div>
+      <h1><span class="wm"><span class="w">María</span></span> <span class="wm"><span class="w hl">Angélica</span></span> <span class="wm"><span class="w">Moreno</span></span></h1>
+      <p class="sub" id="cSub"></p>
+    </div>
+    <div class="dishbox" style="position:relative">
+      <span class="dtip" id="dtip"></span>
+      <canvas id="dish" aria-label="Placa Petri dibujada a tinta y acuarela con cinco colonias: mi trabajo, TribuLat, mis garabatos, mi librería y mis historias"></canvas>
+      <div class="legend sr">
+        <a href="#trabajo"><span class="dot" style="background:var(--green)"></span>mi trabajo</a>
+        <a href="#tribulat"><span class="dot" style="background:var(--violet)"></span>TribuLat</a>
+        <a href="#pintar"><span class="dot" style="background:var(--coral)"></span>mis garabatos</a>
+        <a href="#libros"><span class="dot" style="background:var(--cobalt)"></span>mi librería</a>
+        <a href="#historias"><span class="dot" style="background:var(--saffron)"></span>mis historias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. SOBRE MÍ -->
+  <section id="sobre">
+    <div class="shead">
+      <div class="me-col"><p class="lbl">Sobre mí</p>
+        <figure class="me" id="me" aria-label="Fotos mías">
+          <span class="me-dots" id="meDots"></span>
+        </figure>
+      </div>
+      <div class="about">
+        <p id="cSobre"></p>
+        <div class="facts" id="cDatos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. LIBROS -->
+  <section id="libros">
+    <p class="ghost ghost-long" aria-hidden="true">MI LIBRERÍA</p>
+    <div class="shead">
+      <p class="lbl">Mi librería</p>
+      <h2 id="cLibIntro"></h2>
+    </div>
+
+    <div class="bk-now" id="cAhora"></div>
+    <dl class="stats" id="cStats"></dl>
+
+    <div class="sub-h"><h3>Leídos en 2026 y 2025</h3><span class="muted">Toca un libro para ver su portada y mi reseña.</span></div>
+    <div class="case-row"><span class="lbl">2026</span><div class="case-shelf" data-y="2026"></div></div>
+    <div class="case-row"><span class="lbl">2025</span><div class="case-shelf" data-y="2025"></div></div>
+
+    <div class="sub-h">
+      <div class="pills" role="group" aria-label="Filtrar portadas">
+        <button type="button" class="fl" data-f="fav" aria-pressed="false" aria-controls="covers">Mis 5 estrellas</button>
+        <button type="button" class="fl" data-f="all" aria-pressed="false" aria-controls="covers">Todo lo leído</button>
+        <span class="muted" id="fcount" style="align-self:center;font-size:13px"></span>
+      </div>
+    </div>
+    <div class="covers" id="covers" hidden></div>
+
+    <div class="duo">
+      <div class="authors">
+        <p class="lbl">Autores a los que vuelvo</p>
+        <ol id="cAutores"></ol>
+      </div>
+    </div>
+
+    <div class="sub-h"><h3>Lo que escribí en mis reseñas</h3></div>
+    <div class="q-box" id="qBox" aria-roledescription="carrusel" aria-label="Frases de mis reseñas">
+    <ul class="quotes" id="quotes" aria-live="polite"></ul>
+      <div class="q-nav"><button type="button" id="qPrev" aria-label="Frase anterior">←</button><span id="qDots"></span><button type="button" id="qNext" aria-label="Frase siguiente">→</button></div>
+    </div>
+  </section>
+
+  <!-- 3. TRABAJO -->
+  <section id="trabajo">
+    <p class="ghost ghost-long" aria-hidden="true">MI TRABAJO</p>
+    <div class="shead">
+      <p class="lbl">Mi trabajo</p>
+      <h2 id="cTrabajoIntro"></h2>
+    </div>
+    <div class="stage" id="stageA"></div>
+    <p class="fine" style="margin-top:6px">Toca un círculo para ver el detalle de cada trabajo.</p>
+
+  </section>
+
+  <!-- 4. PINTAR -->
+  <section id="pintar">
+    <p class="ghost ghost-long" aria-hidden="true">MIS GARABATOS</p>
+    <div class="shead">
+      <p class="lbl">Mis garabatos</p>
+      <div><h2 id="cGarIntro"></h2>
+      <p class="g-note" id="cGarNota"></p></div>
+    </div>
+    <div class="sub-h" style="margin-top:0">
+      <div class="pills" role="group" aria-label="Filtrar garabatos">
+        <button type="button" class="fl gk" data-k="all" aria-pressed="true">Todo</button>
+        <button type="button" class="fl gk" data-k="mano" aria-pressed="false">A mano</button>
+        <button type="button" class="fl gk" data-k="cuadro" aria-pressed="false">Cuadros</button>
+        <button type="button" class="fl gk" data-k="digital" aria-pressed="false">Digital</button>
+      </div>
+      <span class="muted" id="gcount" style="font-size:13px"></span>
+    </div>
+    <div class="g-show" id="gShow" aria-roledescription="carrusel" aria-label="Todas mis piezas">
+      <button type="button" class="gs-stage" id="gsStage" aria-label="Ver pieza en grande"></button>
+      <div class="gs-bar">
+        <div class="gs-info"><b id="gsT"></b><span id="gsK"></span></div>
+        <div class="gs-ctrl">
+          <button type="button" id="gsPrev" aria-label="Anterior">←</button>
+          <span id="gsN"></span>
+          <button type="button" id="gsPlay" aria-label="Pausar">❚❚</button>
+          <button type="button" id="gsNext" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+      <div class="gs-dots" id="gsDots"></div>
+    </div>
+    <div class="garabatos" id="garabatos" hidden></div>
+  </section>
+
+  <!-- 5. TRIBULAT -->
+  <section id="tribulat">
+    <p class="ghost" aria-hidden="true">TRIBULAT</p>
+    <div class="shead">
+      <p class="lbl">Mi emprendimiento</p>
+      <h2 id="cTribuTitulo"></h2>
+    </div>
+    <div class="tribu">
+      <div>
+        <p class="tri-eyebrow">Emprendimiento</p>
+        <h3>Tribu<span>Lat</span></h3>
+        <p id="cTribuTexto"></p>
+      </div>
+      <div class="bubbles" aria-hidden="true">
+        <i style="width:44%;height:44%;left:28%;top:28%;background:#FF8A3D">tu tribu</i>
+        <i style="width:26%;height:26%;left:4%;top:10%;background:#FF5E78">planes</i>
+        <i style="width:24%;height:24%;left:70%;top:6%;background:#B9A3FF">charlas</i>
+        <i style="width:28%;height:28%;left:66%;top:66%;background:#FFD166">amigos</i>
+        <i style="width:22%;height:22%;left:8%;top:70%;background:#7EE0B5">intereses</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. HISTORIAS -->
+  <section id="historias">
+    <p class="ghost ghost-long" aria-hidden="true">MIS HISTORIAS</p>
+    <div class="shead">
+      <p class="lbl">Mis historias</p>
+      <h2 id="cHistIntro"></h2>
+    </div>
+    <ul class="stories" id="cHistorias"></ul>
+    <p class="fine" style="margin-top:18px"><a id="cHistPerfil" href="https://medium.com/@moreno.angelica4" target="_blank" rel="noopener">Ver todas mis historias en Medium ↗</a></p>
+  </section>
+
+  <div class="cta" id="contacto">
+    <p class="lbl">Contacto</p>
+    <h2>¿Hablamos?</h2>
+    <p>Ciencia, arte o comunidad. Escríbeme a <b id="mail"></b></p>
+    <div><button class="kbtn" type="button" id="copyMail">Copiar correo</button></div>
+  </div>
+  <footer><span>María Angélica Moreno Montaño</span><span>Colombia · <span id="anio">2026</span></span></footer>
+</main>
+
+<dialog id="cmdk" aria-label="Menú rápido">
+  <input id="kq" type="text" placeholder="Busca una sección o acción…" autocomplete="off">
+  <ul id="klist"></ul>
+</dialog>
+<dialog id="bookDlg" aria-labelledby="bT">
+  <button class="bx" type="button" id="bX" aria-label="Cerrar">×</button>
+  <div class="bd"><div id="bC"></div><div><p class="lbl" id="bS"></p><h3 id="bT"></h3><p class="au" id="bA"></p><p class="st" id="bSt"></p><dl id="bM"></dl><div class="rev" id="bR"></div><a class="gr" id="bG" href="#" target="_blank" rel="noopener">Ver en Goodreads ↗</a></div></div>
+</dialog>
+<p class="toast" id="toast" hidden></p>
+<dialog id="lightbox" aria-labelledby="lbT">
+  <button class="lb-x" type="button" id="lbX" aria-label="Cerrar">×</button>
+  <div class="lb"><div class="lb-img" id="lbImg"></div>
+    <div class="lb-info"><p class="lbl" id="lbK"></p><h3 id="lbT"></h3><dl id="lbM"></dl><p class="note" id="lbN"></p>
+      <div class="lb-nav"><button type="button" id="lbP" aria-label="Anterior">←</button><button type="button" id="lbNx" aria-label="Siguiente">→</button><span id="lbC"></span></div></div></div>
+</dialog>
+<div class="pop" id="pop" role="dialog" aria-modal="false" aria-live="polite"><button class="x" type="button" aria-label="Cerrar">×</button><div id="popBody"></div></div>
+
+<script src="js/idioma.js"></script>
+<script src="contenido.js"></script>
+<script src="libros.js"></script>
+<script src="js/render.js"></script>
+<script src="js/pagina.js"></script>
+</body>
+</html>
