@@ -59,7 +59,7 @@ const D={
 "Proyecto sobre microorganismos nativos que degradan hidrocarburos, para diseñar consorcios de biorremediación en campo.":"Project on native hydrocarbon-degrading microorganisms to design field bioremediation consortia.",
 "Acompaño a talentos y emprendedores para convertir ideas en proyectos de I+D+i de base tecnológica.":"I help innovators and entrepreneurs turn ideas into technology-based R&D projects.",
 "Consultoría técnica para laboratorio de análisis ambiental.":"Technical consulting for an environmental testing lab.",
-"Contengo multitudes.":"I contain multitudes.","y hago con ellas lo que quiero.":"and I do with them as I please.",
+"Desliza hacia el lado para ver más →":"Swipe sideways to see more →","Contengo multitudes.":"I contain multitudes.","y hago con ellas lo que quiero.":"and I do with them as I please.",
 // atributos
 "Abrir menú rápido":"Open quick menu","Fotos mías":"Photos of me","Filtrar portadas":"Filter covers","Frases de mis reseñas":"Quotes from my reviews","Frase anterior":"Previous quote","Frase siguiente":"Next quote",
 "Línea de tiempo serpentina":"Serpentine timeline","Filtrar garabatos":"Filter doodles","Todas mis piezas":"All my pieces","Ver pieza en grande":"View piece larger","Menú rápido":"Quick menu",

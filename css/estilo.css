@@ -330,3 +330,17 @@ dialog::backdrop{background:rgba(30,10,15,.4);backdrop-filter:blur(2px)}
   .bd{grid-template-columns:1fr}.bd img,.bd .nocov{max-width:150px}
 }
 @media (max-width:480px){body{padding-inline:16px}header.top{margin-inline:-16px;padding-inline:16px}.case-shelf{--H:165px}}
+.swipe{display:none}
+@media (max-width:860px){.swipe{display:inline}#stageA{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}}
+
+/* redes */
+.redes{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.red{display:inline-flex;align-items:center;gap:8px;padding:10px 16px 10px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);font:500 15px/1 var(--body);transition:background .2s,border-color .2s}
+.red:hover{background:var(--surface);border-color:var(--ink-2)}
+.red svg,.red-pie svg,.red-tribu svg{width:20px;height:20px;flex:none}
+.redes-pie{display:inline-flex;gap:14px}
+.red-pie{color:var(--ink-2)}.red-pie span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.red-pie:hover{color:var(--ink)}
+.tribu-redes{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.red-tribu{display:inline-flex;align-items:center;gap:8px;padding:10px 16px 10px 12px;border-radius:999px;background:#FF8A3D;color:#1E1338;text-decoration:none;font:600 15px/1 var(--body)}
+.red-tribu:hover{background:#FFA463}

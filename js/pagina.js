@@ -31,7 +31,7 @@
     x.strokeStyle='#1B1614';x.lineWidth=2.2;for(let q=0;q<2;q++){blob(C,C,Rr*1.04*(1+q*.012),3+q*31,.012,90,cl(dP*1.15-q*.15));x.stroke()}
     x.lineWidth=1.3;blob(C,C,Rr*.97,9,.012,90,cl(dP*1.2-.25));x.stroke();
     const sh=cl((dP-.6)/.4);for(let a=3.3;a<3.3+1.3*sh;a+=.07){x.beginPath();x.moveTo(C+Math.cos(a)*Rr*.99,C+Math.sin(a)*Rr*.99);x.lineTo(C+Math.cos(a)*Rr*1.03,C+Math.sin(a)*Rr*1.03);x.lineWidth=1;x.stroke()}
-    x.font=`700 ${Math.max(15,W*.05)}px Caveat, cursive`;x.fillStyle='#1B1614';
+    x.font=`700 ${Math.max(13,W*.047)}px Caveat, cursive`;x.fillStyle='#1B1614';
     COL.forEach((o,i)=>{const lv=eo(pp(lP,i*.13,i*.13+.5));if(lv<=0)return;const lx=o.lx*W,ly=o.ly*W;x.globalAlpha=lv;x.textAlign=o.lx>.5?'right':'left';x.textBaseline='middle';x.fillText(window.__t?__t(SEC[i].n):SEC[i].n,lx,ly);
       const ex=o.x*W+(lx-o.x*W)*.38,ey=o.y*W+(ly-o.y*W)*.38;const sx=lx+(o.lx>.5?-6:6),sy=ly+(o.ly>.5?-13:13);
       x.beginPath();x.moveTo(sx,sy);x.quadraticCurveTo((sx+ex)/2+10,(sy+ey)/2,sx+(ex-sx)*lv,sy+(ey-sy)*lv);x.lineWidth=1.1;x.stroke();x.globalAlpha=1});

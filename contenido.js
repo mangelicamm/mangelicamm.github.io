@@ -192,6 +192,11 @@ window.CONTENIDO = {
               en: "TribuLat is a social connection app for adults looking for community." },
     texto: { es: "Gente con quien compartir planes, intereses y conversaciones de verdad.",
              en: "People to share plans, interests and real conversations with." },
+    // Redes de TribuLat (pega el enlace completo; si lo dejas vacío "" no aparece)
+    redes: {
+      instagram: "https://www.instagram.com/tribulatcol/",
+      tiktok: "https://www.tiktok.com/@tribulatcol",
+    },
   },
 
   /* ---------- MIS HISTORIAS (Medium) ----------
@@ -217,5 +222,11 @@ window.CONTENIDO = {
   /* ---------- CONTACTO ---------- */
   contacto: {
     correo: "moreno.angelica4@gmail.com",
+    // Tus redes (pega el enlace completo; si lo dejas vacío "" no aparece)
+    redes: {
+      linkedin: "https://www.linkedin.com/in/maria-angelica-moreno-m/",
+      instagram: "https://www.instagram.com/mariangelicam.m/",
+      tiktok: "https://www.tiktok.com/@mariaangelicamorem",
+    },
   },
 };

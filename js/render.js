@@ -57,6 +57,18 @@
     return `<li${s.imagen?' class="with-img"':''}><span class="sd">${fechaCorta(s.fecha)}</span>${s.imagen?`<div class="st-img"><img src="medium/${esc(s.imagen)}" alt=""><div>${body}</div></div>`:`<div>${body}</div>`}<a href="${esc(s.enlace)}" target="_blank" rel="noopener">${s.minutos||2} min · Leer en Medium ↗</a></li>`}).join('');
   const hp=$('cHistPerfil');if(hp&&H.perfil)hp.href=H.perfil;
 
+
+  /* redes sociales */
+  const ICON={
+    linkedin:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="6" y="10" width="2.6" height="8" fill="currentColor"/><circle cx="7.3" cy="6.9" r="1.6" fill="currentColor"/><path d="M11 10h2.5v1.2c.5-.8 1.5-1.4 2.8-1.4 2.1 0 3 1.3 3 3.6V18h-2.6v-4.2c0-1.1-.4-1.8-1.4-1.8s-1.7.7-1.7 1.9V18H11z" fill="currentColor"/></svg>',
+    instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg>',
+    tiktok:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h3c.2 1.9 1.6 3.4 3.5 3.6v3c-1.3 0-2.5-.4-3.5-1v6.6A5.8 5.8 0 1 1 11 9.4v3.1a2.8 2.8 0 1 0 3 2.8z" fill="currentColor"/></svg>'};
+  const NOMBRE={linkedin:'LinkedIn',instagram:'Instagram',tiktok:'TikTok'};
+  const redes=(r,cls)=>Object.keys(NOMBRE).filter(k=>r&&r[k]).map(k=>`<a class="${cls}" href="${esc(r[k])}" target="_blank" rel="noopener" aria-label="${NOMBRE[k]}">${ICON[k]}<span>${NOMBRE[k]}</span></a>`).join('');
+  const rc=$('cRedes');if(rc){const h=redes(C.contacto&&C.contacto.redes,'red');rc.innerHTML=h;rc.hidden=!h}
+  const rf=$('cRedesPie');if(rf){const h=redes(C.contacto&&C.contacto.redes,'red-pie');rf.innerHTML=h;rf.hidden=!h}
+  const rt=$('cTribuRedes');if(rt){const h=redes(TR.redes,'red-tribu');rt.innerHTML=h;rt.hidden=!h}
+
   /* contacto */
   const m=$('mail');if(m&&C.contacto)m.textContent=C.contacto.correo;
 })();
