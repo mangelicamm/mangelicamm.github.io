@@ -344,3 +344,13 @@ dialog::backdrop{background:rgba(30,10,15,.4);backdrop-filter:blur(2px)}
 .tribu-redes{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .red-tribu{display:inline-flex;align-items:center;gap:8px;padding:10px 16px 10px 12px;border-radius:999px;background:#FF8A3D;color:#1E1338;text-decoration:none;font:600 15px/1 var(--body)}
 .red-tribu:hover{background:#FFA463}
+
+/* separador trabajo / vida personal */
+.divide{margin-top:120px;padding:56px 0 8px;border-top:2px solid var(--ink);display:grid;grid-template-columns:1fr 2fr;gap:24px;align-items:baseline}
+.divide h2{font:500 clamp(30px,4vw,56px)/1.05 var(--disp);letter-spacing:-.03em;text-wrap:balance}
+/* temas de contacto */
+.temas{list-style:none;padding:0;margin:6px 0 10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line)}
+.temas li{padding:16px 16px 16px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.temas b{font:600 18px/1.2 var(--disp);letter-spacing:-.01em}
+.temas span{font-size:15px;line-height:1.4;color:var(--ink-2)}
+@media (max-width:860px){.divide{grid-template-columns:1fr;margin-top:88px;gap:10px}}

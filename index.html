@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>María Angélica Moreno · Biotecnóloga</title>
-<meta name="description" content="Biotecnóloga que investiga, enseña, pinta y lee. Mi trabajo, mi librería, mis garabatos, TribuLat y mis historias.">
+<meta name="description" content="Biotecnóloga en investigación, laboratorio e innovación. Ciencia de laboratorio, curiosidad de todo lo demás: mi trabajo, TribuLat, mis garabatos, mi librería y mis historias.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="María Angélica Moreno">
-<meta property="og:description" content="Biotecnóloga que investiga, enseña, pinta y lee.">
+<meta property="og:description" content="Ciencia de laboratorio, curiosidad de todo lo demás.">
 <meta property="og:image" content="https://mangelicamm.github.io/og.jpg">
 <meta property="og:url" content="https://mangelicamm.github.io/">
 <link rel="canonical" href="https://mangelicamm.github.io/">
@@ -24,7 +24,7 @@
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#inicio">Angélica<span>.</span></a>
-    <p class="tagline">Biotecnología · Laboratorio · Arte · Libros</p>
+    <p class="tagline" id="cLema"></p>
     <div class="hright"><div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-l="es" aria-pressed="true">ES</button><button type="button" data-l="en" aria-pressed="false">EN</button></div><small>Navegar</small><button class="kbtn" id="kOpen" type="button" aria-label="Abrir menú rápido">⌘ + K</button></div>
   </div>
 </header>
@@ -63,7 +63,82 @@
     </div>
   </section>
 
-  <!-- 2. LIBROS -->
+  <!-- 2. TRABAJO -->
+  <section id="trabajo">
+    <p class="ghost ghost-long" aria-hidden="true">MI TRABAJO</p>
+    <div class="shead">
+      <p class="lbl">Mi trabajo</p>
+      <h2 id="cTrabajoIntro"></h2>
+    </div>
+    <div class="stage" id="stageA"></div>
+    <p class="fine" style="margin-top:6px">Toca un círculo para ver el detalle de cada trabajo.<span class="swipe"> Desliza hacia el lado para ver más →</span></p>
+
+  </section>
+
+  <!-- 3. TRIBULAT -->
+  <section id="tribulat">
+    <p class="ghost" aria-hidden="true">TRIBULAT</p>
+    <div class="shead">
+      <p class="lbl">Mi emprendimiento</p>
+      <h2 id="cTribuTitulo"></h2>
+    </div>
+    <div class="tribu">
+      <div>
+        <p class="tri-eyebrow">Emprendimiento</p>
+        <h3>Tribu<span>Lat</span></h3>
+        <p id="cTribuTexto"></p>
+        <div class="tribu-redes" id="cTribuRedes" hidden></div>
+      </div>
+      <div class="bubbles" aria-hidden="true">
+        <i style="width:44%;height:44%;left:28%;top:28%;background:#FF8A3D">tu tribu</i>
+        <i style="width:26%;height:26%;left:4%;top:10%;background:#FF5E78">planes</i>
+        <i style="width:24%;height:24%;left:70%;top:6%;background:#B9A3FF">charlas</i>
+        <i style="width:28%;height:28%;left:66%;top:66%;background:#FFD166">amigos</i>
+        <i style="width:22%;height:22%;left:8%;top:70%;background:#7EE0B5">intereses</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUERA DEL LABORATORIO -->
+  <div class="divide" id="fuera">
+    <p class="lbl">Fuera del laboratorio</p>
+    <h2 id="cFuera"></h2>
+  </div>
+
+  <!-- 4. PINTAR -->
+  <section id="pintar">
+    <p class="ghost ghost-long" aria-hidden="true">MIS GARABATOS</p>
+    <div class="shead">
+      <p class="lbl">Mis garabatos</p>
+      <div><h2 id="cGarIntro"></h2>
+      <p class="g-note" id="cGarNota"></p></div>
+    </div>
+    <div class="sub-h" style="margin-top:0">
+      <div class="pills" role="group" aria-label="Filtrar garabatos">
+        <button type="button" class="fl gk" data-k="all" aria-pressed="true">Todo</button>
+        <button type="button" class="fl gk" data-k="mano" aria-pressed="false">A mano</button>
+        <button type="button" class="fl gk" data-k="cuadro" aria-pressed="false">Cuadros</button>
+        <button type="button" class="fl gk" data-k="digital" aria-pressed="false">Digital</button>
+      </div>
+      <span class="muted" id="gcount" style="font-size:13px"></span>
+    </div>
+    <div class="g-show" id="gShow" aria-roledescription="carrusel" aria-label="Todas mis piezas">
+      <button type="button" class="gs-stage" id="gsStage" aria-label="Ver pieza en grande"></button>
+      <div class="gs-bar">
+        <div class="gs-info"><b id="gsT"></b><span id="gsK"></span></div>
+        <div class="gs-ctrl">
+          <button type="button" id="gsPrev" aria-label="Anterior">←</button>
+          <span id="gsN"></span>
+          <button type="button" id="gsPlay" aria-label="Pausar">❚❚</button>
+          <button type="button" id="gsNext" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+      <div class="gs-dots" id="gsDots"></div>
+    </div>
+    <div class="garabatos" id="garabatos" hidden></div>
+  </section>
+
+  <!-- 5. LIBROS -->
   <section id="libros">
     <p class="ghost ghost-long" aria-hidden="true">MI LIBRERÍA</p>
     <div class="shead">
@@ -101,75 +176,6 @@
     </div>
   </section>
 
-  <!-- 3. TRABAJO -->
-  <section id="trabajo">
-    <p class="ghost ghost-long" aria-hidden="true">MI TRABAJO</p>
-    <div class="shead">
-      <p class="lbl">Mi trabajo</p>
-      <h2 id="cTrabajoIntro"></h2>
-    </div>
-    <div class="stage" id="stageA"></div>
-    <p class="fine" style="margin-top:6px">Toca un círculo para ver el detalle de cada trabajo.<span class="swipe"> Desliza hacia el lado para ver más →</span></p>
-
-  </section>
-
-  <!-- 4. PINTAR -->
-  <section id="pintar">
-    <p class="ghost ghost-long" aria-hidden="true">MIS GARABATOS</p>
-    <div class="shead">
-      <p class="lbl">Mis garabatos</p>
-      <div><h2 id="cGarIntro"></h2>
-      <p class="g-note" id="cGarNota"></p></div>
-    </div>
-    <div class="sub-h" style="margin-top:0">
-      <div class="pills" role="group" aria-label="Filtrar garabatos">
-        <button type="button" class="fl gk" data-k="all" aria-pressed="true">Todo</button>
-        <button type="button" class="fl gk" data-k="mano" aria-pressed="false">A mano</button>
-        <button type="button" class="fl gk" data-k="cuadro" aria-pressed="false">Cuadros</button>
-        <button type="button" class="fl gk" data-k="digital" aria-pressed="false">Digital</button>
-      </div>
-      <span class="muted" id="gcount" style="font-size:13px"></span>
-    </div>
-    <div class="g-show" id="gShow" aria-roledescription="carrusel" aria-label="Todas mis piezas">
-      <button type="button" class="gs-stage" id="gsStage" aria-label="Ver pieza en grande"></button>
-      <div class="gs-bar">
-        <div class="gs-info"><b id="gsT"></b><span id="gsK"></span></div>
-        <div class="gs-ctrl">
-          <button type="button" id="gsPrev" aria-label="Anterior">←</button>
-          <span id="gsN"></span>
-          <button type="button" id="gsPlay" aria-label="Pausar">❚❚</button>
-          <button type="button" id="gsNext" aria-label="Siguiente">→</button>
-        </div>
-      </div>
-      <div class="gs-dots" id="gsDots"></div>
-    </div>
-    <div class="garabatos" id="garabatos" hidden></div>
-  </section>
-
-  <!-- 5. TRIBULAT -->
-  <section id="tribulat">
-    <p class="ghost" aria-hidden="true">TRIBULAT</p>
-    <div class="shead">
-      <p class="lbl">Mi emprendimiento</p>
-      <h2 id="cTribuTitulo"></h2>
-    </div>
-    <div class="tribu">
-      <div>
-        <p class="tri-eyebrow">Emprendimiento</p>
-        <h3>Tribu<span>Lat</span></h3>
-        <p id="cTribuTexto"></p>
-        <div class="tribu-redes" id="cTribuRedes" hidden></div>
-      </div>
-      <div class="bubbles" aria-hidden="true">
-        <i style="width:44%;height:44%;left:28%;top:28%;background:#FF8A3D">tu tribu</i>
-        <i style="width:26%;height:26%;left:4%;top:10%;background:#FF5E78">planes</i>
-        <i style="width:24%;height:24%;left:70%;top:6%;background:#B9A3FF">charlas</i>
-        <i style="width:28%;height:28%;left:66%;top:66%;background:#FFD166">amigos</i>
-        <i style="width:22%;height:22%;left:8%;top:70%;background:#7EE0B5">intereses</i>
-      </div>
-    </div>
-  </section>
-
   <!-- 6. HISTORIAS -->
   <section id="historias">
     <p class="ghost ghost-long" aria-hidden="true">MIS HISTORIAS</p>
@@ -183,8 +189,10 @@
 
   <div class="cta" id="contacto">
     <p class="lbl">Contacto</p>
-    <h2>¿Hablamos?</h2>
-    <p>Ciencia, arte o comunidad. Escríbeme a <b id="mail"></b></p>
+    <h2 id="cContTitulo"></h2>
+    <p id="cContTexto"></p>
+    <ul class="temas" id="cTemas"></ul>
+    <p>Escríbeme a <b id="mail"></b></p>
     <div class="redes" id="cRedes" hidden></div>
     <div><button class="kbtn" type="button" id="copyMail">Copiar correo</button></div>
   </div>

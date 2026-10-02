@@ -1,7 +1,7 @@
 /* Traducción al inglés de los textos fijos de la página. */
 (function(){
 const D={
-"Saltar intro":"Skip intro","Biotecnología · Laboratorio · Arte · Libros":"Biotechnology · Lab · Art · Books","Navegar":"Navigate",
+"Saltar intro":"Skip intro","Fuera del laboratorio":"Outside the lab","Escríbeme a":"Write to me at","Navegar":"Navigate",
 "Biotecnóloga que investiga, enseña, pinta y lee.":"Biotechnologist who researches, teaches, paints and reads.",
 "mi trabajo":"my work","mis garabatos":"my doodles","mi librería":"my library","mis historias":"my stories",
 "Sobre mí":"About me","SOBRE MÍ":"ABOUT ME",

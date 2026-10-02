@@ -19,15 +19,20 @@ window.CONTENIDO = {
 
   /* ---------- PORTADA Y SOBRE MÍ ---------- */
   perfil: {
-    subtitulo: { es: "Biotecnóloga que investiga, enseña, pinta y lee.",
-                 en: "Biotechnologist who researches, teaches, paints and reads." },
+    // Frase corta arriba de la página (lo que quieres que recuerden de ti)
+    lema: { es: "Biotecnóloga · Investigación, laboratorio e innovación",
+            en: "Biotechnologist · Research, lab and innovation" },
+
+    // Idea central, grande debajo de tu nombre
+    subtitulo: { es: "Ciencia de laboratorio, curiosidad de todo lo demás.",
+                 en: "Lab science, curiosity about everything else." },
 
     // Frases de la animación de entrada (la placa Petri)
     introFrase1: { es: "Contengo multitudes.", en: "I contain multitudes." },
     introFrase2: { es: "y hago con ellas lo que quiero.", en: "and I do with them as I please." },
 
-    sobreMi: { es: "Ingeniera biotecnóloga con maestría en Biotecnología Aplicada del CIBA-IPN. Trabajo entre el laboratorio, la investigación y la innovación, y fuera de él pinto, leo y construyo TribuLat, una app para encontrar comunidad.",
-               en: "Biotechnology engineer with a master's in Applied Biotechnology from CIBA-IPN. I work between the lab, research and innovation, and outside of it I paint, read and build TribuLat, an app to find community." },
+    sobreMi: { es: "Soy ingeniera biotecnóloga con maestría en Biotecnología Aplicada del CIBA-IPN. Llevo más de diez años entre la investigación, el laboratorio y la educación, y hoy acompaño proyectos de innovación de base tecnológica. Me gusta que la ciencia salga del laboratorio y le sirva a alguien. Esa misma curiosidad me lleva a dibujar, leer, escribir y construir TribuLat.",
+               en: "I'm a biotechnology engineer with a master's in Applied Biotechnology from CIBA-IPN. I've spent more than ten years across research, lab work and education, and today I support technology-based innovation projects. I like science to leave the lab and be useful to someone. That same curiosity leads me to draw, read, write and build TribuLat." },
 
     // Los tres datos debajo del texto
     datos: [
@@ -151,13 +156,20 @@ window.CONTENIDO = {
     ],
   },
 
+  /* ---------- FUERA DEL LABORATORIO ----------
+     Frase que separa lo profesional de lo personal */
+  fuera: {
+    intro: { es: "Lo que hago con el resto de mi curiosidad.",
+             en: "What I do with the rest of my curiosity." },
+  },
+
   /* ---------- MIS GARABATOS ----------
      tipo: "mano" · "cuadro" · "digital"
      archivo: nombre de la imagen en la carpeta garabatos/
      Opcionales: año, tamaño, nota (una frase), credito, video (mp4 en garabatos/) */
   garabatos: {
-    intro: { es: "Dibujos a mano, cuadros y piezas digitales. Lo que hago cuando salgo del laboratorio.",
-             en: "Hand drawings, paintings and digital pieces. What I do when I leave the lab." },
+    intro: { es: "Dibujos a mano, cuadros y piezas digitales.",
+             en: "Hand drawings, paintings and digital pieces." },
     nota: { es: "Muchos de mis garabatos nacen en Pinterest. Veo algo que me gusta, lo intento replicar y en el camino voy encontrando mi propio trazo.",
             en: "Many of my doodles start on Pinterest. I see something I like, try to replicate it, and along the way I find my own line." },
     obras: [
@@ -188,10 +200,11 @@ window.CONTENIDO = {
 
   /* ---------- TRIBULAT ---------- */
   tribulat: {
-    titulo: { es: "TribuLat es una app de conexión social para adultos que buscan comunidad.",
-              en: "TribuLat is a social connection app for adults looking for community." },
-    texto: { es: "Gente con quien compartir planes, intereses y conversaciones de verdad.",
-             en: "People to share plans, interests and real conversations with." },
+    // Una sola frase: qué es, para quién es y qué hace
+    titulo: { es: "Una app para que adultos encuentren su tribu.",
+              en: "An app that helps adults find their tribe." },
+    texto: { es: "TribuLat conecta a personas que buscan comunidad con gente de intereses parecidos, para compartir planes y conversaciones de verdad.",
+             en: "TribuLat connects people looking for community with others who share their interests, to make plans and have real conversations." },
     // Redes de TribuLat (pega el enlace completo; si lo dejas vacío "" no aparece)
     redes: {
       instagram: "https://www.instagram.com/tribulatcol/",
@@ -221,6 +234,22 @@ window.CONTENIDO = {
 
   /* ---------- CONTACTO ---------- */
   contacto: {
+    titulo: { es: "Hablemos.", en: "Let's talk." },
+    texto: { es: "Escríbeme si te interesa alguna de estas cosas:",
+             en: "Write to me if you're interested in any of these:" },
+    // Para qué te pueden contactar
+    temas: [
+      { tema: { es: "Proyectos", en: "Projects" },
+        detalle: { es: "biotecnología, microbiología, biorremediación y laboratorio", en: "biotechnology, microbiology, bioremediation and lab work" } },
+      { tema: { es: "Innovación", en: "Innovation" },
+        detalle: { es: "ideas que quieren volverse proyectos de base tecnológica", en: "ideas that want to become technology-based projects" } },
+      { tema: { es: "Colaboraciones", en: "Collaborations" },
+        detalle: { es: "investigación, charlas y divulgación científica", en: "research, talks and science communication" } },
+      { tema: "TribuLat",
+        detalle: { es: "alianzas, pruebas o ganas de sumarte", en: "partnerships, testing or wanting to join" } },
+      { tema: { es: "Libros y arte", en: "Books and art" },
+        detalle: { es: "recomendaciones o simplemente conversar", en: "recommendations or just a chat" } },
+    ],
     correo: "moreno.angelica4@gmail.com",
     // Tus redes (pega el enlace completo; si lo dejas vacío "" no aparece)
     redes: {

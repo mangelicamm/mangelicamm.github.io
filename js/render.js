@@ -14,7 +14,7 @@
   const P=C.perfil||{},B=C.libreria||{},T=C.trabajo||{},G=C.garabatos||{},TR=C.tribulat||{},H=C.historias||{};
 
   /* portada */
-  set('cSub',P.subtitulo);
+  set('cLema',P.lema);set('cSub',P.subtitulo);
   window.INTRO_FRASES=[L(P.introFrase1),L(P.introFrase2)];
 
   /* sobre mí */
@@ -49,6 +49,7 @@
     src:'garabatos/'+o.archivo,video:o.video?'garabatos/'+o.video:null,cr:L(o.credito),note:L(o.nota)}));
 
   /* tribulat */
+  set('cFuera',C.fuera&&C.fuera.intro);
   set('cTribuTitulo',TR.titulo);set('cTribuTexto',TR.texto);
 
   /* historias */
@@ -70,5 +71,8 @@
   const rt=$('cTribuRedes');if(rt){const h=redes(TR.redes,'red-tribu');rt.innerHTML=h;rt.hidden=!h}
 
   /* contacto */
-  const m=$('mail');if(m&&C.contacto)m.textContent=C.contacto.correo;
+  const K=C.contacto||{};
+  const m=$('mail');if(m)m.textContent=K.correo||'';
+  set('cContTitulo',K.titulo);set('cContTexto',K.texto);
+  const tm=$('cTemas');if(tm)tm.innerHTML=(K.temas||[]).map(t=>`<li><b>${esc(L(t.tema))}</b><span>${esc(L(t.detalle))}</span></li>`).join('');
 })();
