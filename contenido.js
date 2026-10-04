@@ -24,20 +24,20 @@ window.CONTENIDO = {
             en: "Biotechnologist · Research, lab and innovation" },
 
     // Idea central, grande debajo de tu nombre
-    subtitulo: { es: "Ciencia de laboratorio, curiosidad de todo lo demás.",
-                 en: "Lab science, curiosity about everything else." },
+    subtitulo: { es: "Científica de profesión, curiosa por naturaleza.",
+                 en: "A scientist by trade, curious by nature." },
 
     // Frases de la animación de entrada (la placa Petri)
     introFrase1: { es: "Contengo multitudes.", en: "I contain multitudes." },
     introFrase2: { es: "y hago con ellas lo que quiero.", en: "and I do with them as I please." },
 
-    sobreMi: { es: "Soy ingeniera biotecnóloga con maestría en Biotecnología Aplicada del CIBA-IPN. Llevo más de diez años entre la investigación, el laboratorio y la educación, y hoy acompaño proyectos de innovación de base tecnológica. Me gusta que la ciencia salga del laboratorio y le sirva a alguien. Esa misma curiosidad me lleva a dibujar, leer, escribir y construir TribuLat.",
-               en: "I'm a biotechnology engineer with a master's in Applied Biotechnology from CIBA-IPN. I've spent more than ten years across research, lab work and education, and today I support technology-based innovation projects. I like science to leave the lab and be useful to someone. That same curiosity leads me to draw, read, write and build TribuLat." },
+    sobreMi: { es: "Soy ingeniera biotecnóloga con maestría en Biotecnología Aplicada. Llevo más de diez años entre la investigación, el laboratorio y la educación, y hoy acompaño proyectos de innovación de base tecnológica. Me gusta que la ciencia salga del laboratorio y le sirva a alguien. Esa misma curiosidad me lleva a dibujar, leer, escribir y construir TribuLat.",
+               en: "I'm a biotechnology engineer with a master's in Applied Biotechnology. I've spent more than ten years across research, lab work and education, and today I support technology-based innovation projects. I like science to leave the lab and be useful to someone. That same curiosity leads me to draw, read, write and build TribuLat." },
 
     // Los tres datos debajo del texto
     datos: [
       { titulo: "Colombia", detalle: "Bucaramanga, Santander" },
-      { titulo: { es: "MSc Biotecnología Aplicada", en: "MSc Applied Biotechnology" }, detalle: "CIBA · IPN, Tlaxcala" },
+      { titulo: { es: "MSc Biotecnología Aplicada", en: "MSc Applied Biotechnology" }, detalle: { es: "Tlaxcala, México", en: "Tlaxcala, Mexico" } },
       { titulo: { es: "+10 años", en: "10+ years" }, detalle: { es: "investigación, laboratorio y educación", en: "research, lab and education" } },
     ],
 
@@ -205,6 +205,9 @@ window.CONTENIDO = {
               en: "An app that helps adults find their tribe." },
     texto: { es: "TribuLat conecta a personas que buscan comunidad con gente de intereses parecidos, para compartir planes y conversaciones de verdad.",
              en: "TribuLat connects people looking for community with others who share their interests, to make plans and have real conversations." },
+    // Video de la app (carpeta tribulat/). Si lo dejas vacío "" se ven las burbujas.
+    video: "tribulat.mp4",
+    portada: "tribulat-portada.jpg",
     // Redes de TribuLat (pega el enlace completo; si lo dejas vacío "" no aparece)
     redes: {
       instagram: "https://www.instagram.com/tribulatcol/",

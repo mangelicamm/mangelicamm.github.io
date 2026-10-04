@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>María Angélica Moreno · Biotecnóloga</title>
-<meta name="description" content="Biotecnóloga en investigación, laboratorio e innovación. Ciencia de laboratorio, curiosidad de todo lo demás: mi trabajo, TribuLat, mis garabatos, mi librería y mis historias.">
+<meta name="description" content="Biotecnóloga en investigación, laboratorio e innovación. Científica de profesión, curiosa por naturaleza: mi trabajo, TribuLat, mis garabatos, mi librería y mis historias.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="María Angélica Moreno">
-<meta property="og:description" content="Ciencia de laboratorio, curiosidad de todo lo demás.">
+<meta property="og:description" content="Científica de profesión, curiosa por naturaleza.">
 <meta property="og:image" content="https://mangelicamm.github.io/og.jpg">
 <meta property="og:url" content="https://mangelicamm.github.io/">
 <link rel="canonical" href="https://mangelicamm.github.io/">
@@ -89,6 +89,7 @@
         <p id="cTribuTexto"></p>
         <div class="tribu-redes" id="cTribuRedes" hidden></div>
       </div>
+      <figure class="tri-video" id="cTribuVideo" hidden></figure>
       <div class="bubbles" aria-hidden="true">
         <i style="width:44%;height:44%;left:28%;top:28%;background:#FF8A3D">tu tribu</i>
         <i style="width:26%;height:26%;left:4%;top:10%;background:#FF5E78">planes</i>
@@ -105,40 +106,7 @@
     <h2 id="cFuera"></h2>
   </div>
 
-  <!-- 4. PINTAR -->
-  <section id="pintar">
-    <p class="ghost ghost-long" aria-hidden="true">MIS GARABATOS</p>
-    <div class="shead">
-      <p class="lbl">Mis garabatos</p>
-      <div><h2 id="cGarIntro"></h2>
-      <p class="g-note" id="cGarNota"></p></div>
-    </div>
-    <div class="sub-h" style="margin-top:0">
-      <div class="pills" role="group" aria-label="Filtrar garabatos">
-        <button type="button" class="fl gk" data-k="all" aria-pressed="true">Todo</button>
-        <button type="button" class="fl gk" data-k="mano" aria-pressed="false">A mano</button>
-        <button type="button" class="fl gk" data-k="cuadro" aria-pressed="false">Cuadros</button>
-        <button type="button" class="fl gk" data-k="digital" aria-pressed="false">Digital</button>
-      </div>
-      <span class="muted" id="gcount" style="font-size:13px"></span>
-    </div>
-    <div class="g-show" id="gShow" aria-roledescription="carrusel" aria-label="Todas mis piezas">
-      <button type="button" class="gs-stage" id="gsStage" aria-label="Ver pieza en grande"></button>
-      <div class="gs-bar">
-        <div class="gs-info"><b id="gsT"></b><span id="gsK"></span></div>
-        <div class="gs-ctrl">
-          <button type="button" id="gsPrev" aria-label="Anterior">←</button>
-          <span id="gsN"></span>
-          <button type="button" id="gsPlay" aria-label="Pausar">❚❚</button>
-          <button type="button" id="gsNext" aria-label="Siguiente">→</button>
-        </div>
-      </div>
-      <div class="gs-dots" id="gsDots"></div>
-    </div>
-    <div class="garabatos" id="garabatos" hidden></div>
-  </section>
-
-  <!-- 5. LIBROS -->
+  <!-- 4. LIBROS -->
   <section id="libros">
     <p class="ghost ghost-long" aria-hidden="true">MI LIBRERÍA</p>
     <div class="shead">
@@ -174,6 +142,39 @@
     <ul class="quotes" id="quotes" aria-live="polite"></ul>
       <div class="q-nav"><button type="button" id="qPrev" aria-label="Frase anterior">←</button><span id="qDots"></span><button type="button" id="qNext" aria-label="Frase siguiente">→</button></div>
     </div>
+  </section>
+
+  <!-- 5. PINTAR -->
+  <section id="pintar">
+    <p class="ghost ghost-long" aria-hidden="true">MIS GARABATOS</p>
+    <div class="shead">
+      <p class="lbl">Mis garabatos</p>
+      <div><h2 id="cGarIntro"></h2>
+      <p class="g-note" id="cGarNota"></p></div>
+    </div>
+    <div class="sub-h" style="margin-top:0">
+      <div class="pills" role="group" aria-label="Filtrar garabatos">
+        <button type="button" class="fl gk" data-k="all" aria-pressed="true">Todo</button>
+        <button type="button" class="fl gk" data-k="mano" aria-pressed="false">A mano</button>
+        <button type="button" class="fl gk" data-k="cuadro" aria-pressed="false">Cuadros</button>
+        <button type="button" class="fl gk" data-k="digital" aria-pressed="false">Digital</button>
+      </div>
+      <span class="muted" id="gcount" style="font-size:13px"></span>
+    </div>
+    <div class="g-show" id="gShow" aria-roledescription="carrusel" aria-label="Todas mis piezas">
+      <button type="button" class="gs-stage" id="gsStage" aria-label="Ver pieza en grande"></button>
+      <div class="gs-bar">
+        <div class="gs-info"><b id="gsT"></b><span id="gsK"></span></div>
+        <div class="gs-ctrl">
+          <button type="button" id="gsPrev" aria-label="Anterior">←</button>
+          <span id="gsN"></span>
+          <button type="button" id="gsPlay" aria-label="Pausar">❚❚</button>
+          <button type="button" id="gsNext" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+      <div class="gs-dots" id="gsDots"></div>
+    </div>
+    <div class="garabatos" id="garabatos" hidden></div>
   </section>
 
   <!-- 6. HISTORIAS -->

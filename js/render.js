@@ -51,6 +51,18 @@
   /* tribulat */
   set('cFuera',C.fuera&&C.fuera.intro);
   set('cTribuTitulo',TR.titulo);set('cTribuTexto',TR.texto);
+  const tv=$('cTribuVideo');
+  if(tv&&TR.video){
+    const quieto=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    tv.innerHTML=`<video src="tribulat/${esc(TR.video)}"${TR.portada?` poster="tribulat/${esc(TR.portada)}"`:''} muted loop playsinline preload="metadata" aria-label="Video de la app TribuLat"></video><button type="button" class="tv-btn" aria-label="Pausar video">❚❚</button><figcaption>${esc(L({es:'Así se ve la app',en:'A look at the app'}))}</figcaption>`;
+    tv.hidden=false;const bb=tv.parentElement.querySelector('.bubbles');if(bb)bb.hidden=true;
+    const v=tv.querySelector('video'),b=tv.querySelector('.tv-btn');let usuario=quieto;
+    const pinta=()=>{const p=v.paused;b.textContent=p?'▶':'❚❚';b.setAttribute('aria-label',p?'Reproducir video':'Pausar video')};
+    const toggle=()=>{if(v.paused){usuario=false;v.play().catch(()=>{})}else{usuario=true;v.pause()}};
+    v.addEventListener('play',pinta);v.addEventListener('pause',pinta);
+    v.addEventListener('click',toggle);b.addEventListener('click',toggle);pinta();
+    if('IntersectionObserver' in window)new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){if(!usuario)v.play().catch(()=>{})}else v.pause()}),{threshold:.35}).observe(v);
+  }
 
   /* historias */
   set('cHistIntro',H.intro);

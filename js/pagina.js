@@ -127,7 +127,7 @@
   /* ---------- ⌘K ---------- */
   const dlg=$('cmdk'),q=$('kq'),list=$('klist');
   const copy=()=>{const m=$('mail').textContent;try{navigator.clipboard.writeText(m).then(()=>toast('Correo copiado'),()=>toast(m))}catch(e){toast(m)}};
-  const ITEMS=[['Inicio','#inicio','Ir'],['Sobre mí','#sobre','Ir'],['Mi trabajo','#trabajo','Ir'],['TribuLat','#tribulat','Ir'],['Mis garabatos','#pintar','Ir'],['Mi librería','#libros','Ir'],['Mis historias','#historias','Ir'],['Contacto','#contacto','Ir'],['Copiar correo',copy,'Acción']];
+  const ITEMS=[['Inicio','#inicio','Ir'],['Sobre mí','#sobre','Ir'],['Mi trabajo','#trabajo','Ir'],['TribuLat','#tribulat','Ir'],['Mi librería','#libros','Ir'],['Mis garabatos','#pintar','Ir'],['Mis historias','#historias','Ir'],['Contacto','#contacto','Ir'],['Copiar correo',copy,'Acción']];
   function render(f=''){list.innerHTML='';ITEMS.filter(i=>i[0].toLowerCase().includes(f.toLowerCase())).forEach(([n,go,k])=>{const li=document.createElement('li'),b=document.createElement('button');b.type='button';
     const sp=document.createElement('span');sp.textContent=n;const sm=document.createElement('small');sm.textContent=k;b.append(sp,sm);
     b.addEventListener('click',()=>{dlg.close();typeof go==='string'?document.querySelector(go).scrollIntoView({behavior:reduce?'auto':'smooth'}):go()});li.appendChild(b);list.appendChild(li)})}
