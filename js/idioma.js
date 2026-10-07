@@ -32,7 +32,7 @@ const D={
 "Estudio a partir de una ilustración de Bronte Emmerich":"Study based on an illustration by Bronte Emmerich","Ramo de flores":"Bouquet","Flores sobre azul":"Flowers on blue","Flores a lápiz":"Pencil flowers",
 "Técnica":"Technique","Año":"Year","Tamaño":"Size","Crédito":"Credit","Ilustración digital · Adobe":"Digital illustration · Adobe","Pintura sobre lienzo":"Painting on canvas",
 "Tinta sobre papel":"Ink on paper","Tinta y color sobre papel":"Ink and color on paper","Grafito sobre papel":"Graphite on paper",
-"El video muestra el proceso de coloreado, acelerado 4 veces.":"The video shows the coloring process, sped up 4x.",
+"El video muestra el proceso de coloreado, acelerado cuatro veces.":"The video shows the coloring process, sped up 4x.",
 "Mi emprendimiento":"My venture","Emprendimiento":"Venture",
 "TribuLat es una app de conexión social para adultos que buscan comunidad.":"TribuLat is a social connection app for adults looking for community.",
 "Gente con quien compartir planes, intereses y conversaciones de verdad.":"People to share plans, interests and real conversations with.",
@@ -59,7 +59,7 @@ const D={
 "Proyecto sobre microorganismos nativos que degradan hidrocarburos, para diseñar consorcios de biorremediación en campo.":"Project on native hydrocarbon-degrading microorganisms to design field bioremediation consortia.",
 "Acompaño a talentos y emprendedores para convertir ideas en proyectos de I+D+i de base tecnológica.":"I help innovators and entrepreneurs turn ideas into technology-based R&D projects.",
 "Consultoría técnica para laboratorio de análisis ambiental.":"Technical consulting for an environmental testing lab.",
-"Desliza hacia el lado para ver más →":"Swipe sideways to see more →","Contengo multitudes.":"I contain multitudes.","y hago con ellas lo que quiero.":"and I do with them as I please.",
+"Pronto habrá una pieza aquí.":"A piece is coming soon.","Desliza hacia el lado para ver más →":"Swipe sideways to see more →","Contengo multitudes.":"I contain multitudes.","y hago con ellas lo que quiero.":"and I do with them as I please.",
 // atributos
 "Abrir menú rápido":"Open quick menu","Fotos mías":"Photos of me","Filtrar portadas":"Filter covers","Frases de mis reseñas":"Quotes from my reviews","Frase anterior":"Previous quote","Frase siguiente":"Next quote",
 "Línea de tiempo serpentina":"Serpentine timeline","Filtrar garabatos":"Filter doodles","Todas mis piezas":"All my pieces","Ver pieza en grande":"View piece larger","Menú rápido":"Quick menu",

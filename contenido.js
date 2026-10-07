@@ -37,7 +37,7 @@ window.CONTENIDO = {
     // Los tres datos debajo del texto
     datos: [
       { titulo: "Colombia", detalle: "Bucaramanga, Santander" },
-      { titulo: { es: "MSc Biotecnología Aplicada", en: "MSc Applied Biotechnology" }, detalle: { es: "Tlaxcala, México", en: "Tlaxcala, Mexico" } },
+      { titulo: { es: "Maestría en Biotecnología Aplicada", en: "MSc in Applied Biotechnology" }, detalle: { es: "Tlaxcala, México", en: "Tlaxcala, Mexico" } },
       { titulo: { es: "+10 años", en: "10+ years" }, detalle: { es: "investigación, laboratorio y educación", en: "research, lab and education" } },
     ],
 
@@ -55,7 +55,7 @@ window.CONTENIDO = {
      La lista completa de libros está en libros.js (sale de Goodreads).
      Aquí solo va lo que se destaca. */
   libreria: {
-    intro: { es: "Novela sobre todo, historia de la ciencia, autores colombianos y algún romance científico para los días difíciles.",
+    intro: { es: "Sobre todo novelas, historia de la ciencia, autores colombianos y algún romance científico para los días difíciles.",
              en: "Mostly novels, history of science, Colombian authors and the odd lab romance for tough days." },
 
     // Libro que estás leyendo (portada en la carpeta covers/)
@@ -86,10 +86,10 @@ window.CONTENIDO = {
       { es: "Detrás de los datos que ahora se dan en las clases de ciencias hay una historia increíble de científicos que sacrificaron hasta sus vidas para obtener datos lo más exactos posibles.",
         en: "Behind the data taught in science class today lies an incredible story of scientists who even gave their lives to get the most accurate data possible.",
         libro: "En busca de Venus · Andrea Wulf" },
-      { es: "Me parece tremenda proeza que los escritores imaginen y escriban fragmentos de vida.",
+      { es: "Me parece una tremenda proeza que los escritores imaginen y escriban fragmentos de vida.",
         en: "I find it a tremendous feat that writers imagine and write fragments of life.",
         libro: "Find Me · André Aciman" },
-      { es: "Nuestro legado a través del arte, de la escritura o del amor permite que los que somos trascienda más allá del olvido de la muerte.",
+      { es: "Nuestro legado a través del arte, de la escritura o del amor permite que lo que somos trascienda más allá del olvido de la muerte.",
         en: "Our legacy through art, writing or love lets who we are transcend beyond the oblivion of death.",
         libro: "Manual de tolerancia · Héctor Abad Gómez" },
       { es: "¡No me gustó hasta que me gustó!", en: "I didn't like it until I did!",
@@ -105,8 +105,8 @@ window.CONTENIDO = {
            "inn" (innovación, violeta) · "edu" (educación, amarillo) · "bt" (biotecnología, coral)
      fin: "AAAA-MM" o "hoy"  ·  Ordénalos del más antiguo al más reciente. */
   trabajo: {
-    intro: { es: "Investigación, laboratorio y transferencia tecnológica. Me gusta que la ciencia salga del laboratorio y le sirva a alguien.",
-             en: "Research, lab and technology transfer. I like science to leave the lab and be useful to someone." },
+    intro: { es: "Biorremediación, microbiología e innovación: ciencia que se puede usar.",
+             en: "Bioremediation, microbiology and innovation: science you can use." },
     empleos: [
       { inicio: "2013-03", fin: "2013-12", area: "bt",
         cargo: { es: "Auxiliar de investigación", en: "Research assistant" },
@@ -131,8 +131,8 @@ window.CONTENIDO = {
       { inicio: "2019-07", fin: "2022-02", area: "lab",
         cargo: { es: "Investigadora adjunta · Profesional 2 → 4", en: "Associate researcher · Professional 2 → 4" },
         lugar: "DTH SAS / Ecopetrol · Bucaramanga",
-        descripcion: { es: "Nuevas técnicas microbiológicas y sistema de calidad bajo ISO/IEC 17025:2017.",
-                       en: "New microbiological techniques and a quality system under ISO/IEC 17025:2017." } },
+        descripcion: { es: "Implementación de nuevas técnicas microbiológicas y del sistema de calidad bajo la norma ISO/IEC 17025:2017.",
+                       en: "Implemented new microbiological techniques and a quality system under ISO/IEC 17025:2017." } },
       { inicio: "2022-04", fin: "2024-09", area: "lab",
         cargo: { es: "Profesional investigadora", en: "Research professional" },
         lugar: "PSL Proanalisis · Bucaramanga",
@@ -151,7 +151,7 @@ window.CONTENIDO = {
       { inicio: "2025-03", fin: "hoy", area: "lab",
         cargo: { es: "Consultora técnica", en: "Technical consultant" },
         lugar: "Lasertec SAS · Barrancabermeja",
-        descripcion: { es: "Consultoría técnica para laboratorio de análisis ambiental.",
+        descripcion: { es: "Consultoría técnica para un laboratorio de análisis ambiental.",
                        en: "Technical consulting for an environmental testing lab." } },
     ],
   },
@@ -191,7 +191,7 @@ window.CONTENIDO = {
       { titulo: { es: "Cute girls poop too (estudio)", en: "Cute girls poop too (study)" }, tipo: "digital", tecnica: "Adobe Fresco",
         credito: { es: "Estudio a partir de una ilustración de Bronte Emmerich", en: "Study based on an illustration by Bronte Emmerich" },
         archivo: "sapo-estudio.jpg", video: "sapo-proceso.mp4",
-        nota: { es: "El video muestra el proceso de coloreado, acelerado 4 veces.", en: "The video shows the coloring process, sped up 4x." } },
+        nota: { es: "El video muestra el proceso de coloreado, acelerado cuatro veces.", en: "The video shows the coloring process, sped up 4x." } },
       { titulo: { es: "Ramo de flores", en: "Bouquet" }, tipo: "mano", tecnica: { es: "Tinta sobre papel", en: "Ink on paper" }, año: "2020", archivo: "ramo-de-flores.jpg" },
       { titulo: { es: "Flores sobre azul", en: "Flowers on blue" }, tipo: "digital", tecnica: { es: "Ilustración digital · Adobe", en: "Digital illustration · Adobe" }, archivo: "flores-sobre-azul.jpg" },
       { titulo: { es: "Flores a lápiz", en: "Pencil flowers" }, tipo: "mano", tecnica: { es: "Grafito sobre papel", en: "Graphite on paper" }, año: "2020", archivo: "flores-a-lapiz.jpg" },

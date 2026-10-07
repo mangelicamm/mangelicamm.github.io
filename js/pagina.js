@@ -273,7 +273,7 @@
     else if(g.src){const im=document.createElement('img');im.src=g.src;im.alt=g.t;img.appendChild(im)}else{const c=document.createElement('canvas');drawArt(c,g,1100);img.appendChild(c)}
     $('lbK').textContent=KN[g.k];$('lbT').textContent=g.t;
     const m=$('lbM');m.innerHTML='';[['Técnica',g.tec],['Año',g.y],['Tamaño',g.tam],['Crédito',g.cr]].filter(r=>r[1]).forEach(([k,v])=>{const d=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=k;dd.textContent=v;d.append(dt,dd);m.appendChild(d)});
-    $('lbN').textContent=g.note||(g.video?'El video muestra el proceso de coloreado, acelerado 4 veces.':g.ph?'Espacio reservado: aquí irá una de tus piezas.':'');
+    $('lbN').textContent=g.note||(g.video?'El video muestra el proceso de coloreado, acelerado cuatro veces.':g.ph?'Pronto habrá una pieza aquí.':'');
     const v=vis();$('lbC').textContent=`${v.indexOf(i)+1} / ${v.length}`;
     if(!lb.open)lb.showModal();
   }
